@@ -1,0 +1,44 @@
+.Nav {
+    background: rgba(73, 79, 82, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    float: left;
+    height: 200px;
+  }
+
+.NavScrolled {
+    backdrop-filter: blur(20px);
+}
+
+.NavGroup {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    padding: 20px auto;
+    justify-content: space-between;
+    
+
+}
+
+.Nav a {
+    color: white;
+    font-weight: 700;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content:  space-around;
+    list-style: none;
+}
+
+
+
+@media (max-width: 640px) {
+    .Nav {
+        padding: 15px 0px;
+    }
+}
